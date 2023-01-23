@@ -4,12 +4,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 html {
   font-size: 10px;
   font-family: "Monserrat", sans-serif;
 }
 a {
   text-decoration: none;
+}
+p {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300px;
+  letter-spacing: 0.5rem;
 }
 .container {
   min-height: 100vh;
@@ -101,7 +114,74 @@ a {
   background-color: crimson;
 }
 /* /*end of hero section */
+/* Services Section */
+#service .service {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#service .section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: crimson;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+#service .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#service .service-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(./img/img-1.png);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#service .service-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+#service .service-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+#service .service-item h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#service .service-item p {
+  color: white;
+}
+/* End of services section */
+/* Project Section */
 
+/* End of Project Section */
 /*keyframes*/
 @keyframes text_reveal_box {
   50% {
